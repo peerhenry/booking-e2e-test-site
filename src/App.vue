@@ -23,9 +23,14 @@ button, a
   cursor pointer
   border 1px solid black
   padding 10px
+  font-family Avenir, Helvetica, Arial, sans-serif
+  font-size 16px
 
   &:hover
     background-color #eee
+
+  &:disabled
+    opacity 0.5
 
 h1, h2, h3, h4, h5
   margin 0

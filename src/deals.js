@@ -16,21 +16,26 @@ const deals = [
   },
   {
     id: 4,
-    name: 'kartin 2',
-    pricePerPerson: 40,
+    name: 'karting 2',
+    pricePerPerson: 22.25,
   },
   {
     id: 5,
-    name: 'kartin 3',
-    pricePerPerson: 80,
+    name: 'special karting',
+    pricePerPerson: 40,
   },
   {
     id: 6,
+    name: 'superspecial karting',
+    pricePerPerson: 80,
+  },
+  {
+    id: 7,
     name: 'lasergame 1',
     pricePerPerson: 10,
   },
   {
-    id: 7,
+    id: 8,
     name: 'lasergame 2',
     pricePerPerson: 17.5,
   },

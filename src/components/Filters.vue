@@ -5,11 +5,11 @@
     label Price per person
     label.ranger
       span min
-      input(type="range" min="0" max="100" v-model="minPrice")
+      input#min-price(type="range" min="0" max="100" v-model="minPrice" name="minPrice")
       span {{ minPrice }}
     label.ranger
       span max
-      input(type="range" min="0" max="100" v-model="maxPrice")
+      input#max-price(type="range" min="0" max="100" v-model="maxPrice" name="maxPrice")
       span {{ maxPrice }}
 </template>
 

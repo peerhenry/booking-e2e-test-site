@@ -6,8 +6,8 @@ Create an E2E testing setup that does the following 2 tests:
 
 ### Test if filter works:
 
-- Adjust filters so that one product remains on screen
-- Assert that correct number of bookings are shown with the given filter.
+- Adjust filters: look for a booking between €30 and €60 per person.
+- Assert that the correct booking is left in the overview
 
 ### Test booking flow:
 

@@ -18,7 +18,7 @@ export default {}
 
 .block
   display block
-  transform translateY(-150px)
+  transform translateY(-100%)
 
   h1
     display block
