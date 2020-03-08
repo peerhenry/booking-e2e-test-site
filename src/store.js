@@ -1,20 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import deals from './deals.js'
 
 Vue.use(Vuex)
-
-const deals = [
-  {
-    id: 1,
-    name: 'bowling 1',
-    pricePerPerson: 15,
-  },
-  {
-    id: 2,
-    name: 'bowling 2',
-    pricePerPerson: 20,
-  },
-]
 
 export default new Vuex.Store({
   state: {
@@ -24,7 +12,9 @@ export default new Vuex.Store({
     filteredDeals: state => filter => {
       if (!filter) return state.deals
       return state.deals.filter(
-        d => d >= filter.minPrice && d <= filter.maxPrice
+        d =>
+          d.pricePerPerson >= filter.minPrice &&
+          d.pricePerPerson <= filter.maxPrice
       )
     },
     getDealById: state => id => state.deals.find(d => d.id == id),

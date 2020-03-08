@@ -1,6 +1,6 @@
 <template lang="pug">
 .deals
-  .deal-card(v-for="deal in deals")
+  .deal-card(v-for="deal in deals" :key="deal.id")
     h3 {{ deal.name }}
     p € {{ deal.pricePerPerson }} pp
     button(@click="goto(deal)") Book now
@@ -26,6 +26,8 @@ export default {
   grid-template-columns repeat(3, 1fr)
   -ms-grid-template-columns repeat(3, 1fr)
   grid-gap 10px
+  padding 20px
+  padding-right 40px
 
 .deal-card
   border 1px solid grey

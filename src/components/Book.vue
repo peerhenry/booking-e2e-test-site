@@ -3,7 +3,7 @@
   .header
     h2 {{ deal.name }}
   .body
-    p € {{ deal.price }} pp
+    p € {{ deal.pricePerPerson }} pp
     p
       label(for="people")
         span Number of people:
