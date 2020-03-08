@@ -1,19 +1,32 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+<template lang="pug">
+#app
+  <router-view />
 </template>
 
 <style lang="stylus">
+html, body, #app
+  height 100%
+  padding 0
+  margin 0
+
 #app
   font-family Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   text-align center
   color #2c3e50
-  margin-top 60px
+
+button, a
+  text-decoration none
+  background-color white
+  color black
+  cursor pointer
+  border 1px solid black
+  padding 10px
+
+  &:hover
+    background-color #eee
+
+h1, h2, h3, h4, h5
+  margin 0
 </style>
